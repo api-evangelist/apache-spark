@@ -1,0 +1,138 @@
+name: Apache Spark
+description: 'Apache Spark is a unified analytics engine for large-scale data processing.  It provides high-level APIs in Java, Scala, Python and R, and an optimized  engine that supports general execution graphs.
+
+  '
+image: https://spark.apache.org/images/spark-logo-trademark.png
+url: https://spark.apache.org/
+created: '2024-01-01'
+modified: '2024-01-01'
+specificationVersion: '0.16'
+tags:
+- big data
+- analytics
+- distributed computing
+- machine learning
+- streaming
+- apache
+apis:
+- name: Apache Spark REST API
+  description: 'REST API for monitoring Spark applications, accessing cluster information, and managing Spark jobs through the Spark UI backend.
+
+    '
+  image: https://spark.apache.org/images/spark-logo-trademark.png
+  humanURL: https://spark.apache.org/docs/latest/monitoring.html
+  baseURL: http://localhost:4040/api/v1
+  tags:
+  - monitoring
+  - metrics
+  - jobs
+  - stages
+  properties:
+  - type: Documentation
+    url: https://spark.apache.org/docs/latest/monitoring.html#rest-api
+  - type: OpenAPI
+    url: https://spark.apache.org/docs/latest/api/openapi/spark-api.yaml
+  contact:
+  - FN: Apache Spark Dev Mailing List
+    email: dev@spark.apache.org
+    url: https://spark.apache.org/community.html
+- name: Spark SQL API
+  description: 'Spark module for structured data processing with DataFrame and Dataset APIs. Provides SQL interface and supports various data sources.
+
+    '
+  image: https://spark.apache.org/images/spark-logo-trademark.png
+  humanURL: https://spark.apache.org/sql/
+  baseURL: https://spark.apache.org/docs/latest/api/sql/
+  tags:
+  - sql
+  - dataframes
+  - structured data
+  properties:
+  - type: Documentation
+    url: https://spark.apache.org/docs/latest/sql-programming-guide.html
+  - type: API Reference (Scala)
+    url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html
+  - type: API Reference (Python)
+    url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html
+  - type: API Reference (Java)
+    url: https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/sql/package-summary.html
+  - type: API Reference (R)
+    url: https://spark.apache.org/docs/latest/api/R/reference/index.html
+- name: Spark Streaming API
+  description: 'Scalable, high-throughput, fault-tolerant stream processing of live data streams.
+
+    '
+  image: https://spark.apache.org/images/spark-logo-trademark.png
+  humanURL: https://spark.apache.org/streaming/
+  baseURL: https://spark.apache.org/docs/latest/api/streaming/
+  tags:
+  - streaming
+  - real-time
+  - data processing
+  properties:
+  - type: Documentation
+    url: https://spark.apache.org/docs/latest/streaming-programming-guide.html
+  - type: API Reference (Scala)
+    url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/streaming/index.html
+  - type: API Reference (Python)
+    url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming/index.html
+- name: MLlib (Machine Learning Library)
+  description: 'Spark''s scalable machine learning library consisting of common learning  algorithms and utilities, including classification, regression, clustering,  and collaborative filtering.
+
+    '
+  image: https://spark.apache.org/images/spark-logo-trademark.png
+  humanURL: https://spark.apache.org/mllib/
+  baseURL: https://spark.apache.org/docs/latest/api/mllib/
+  tags:
+  - machine learning
+  - algorithms
+  - ml
+  - data science
+  properties:
+  - type: Documentation
+    url: https://spark.apache.org/docs/latest/ml-guide.html
+  - type: API Reference (Scala)
+    url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/index.html
+  - type: API Reference (Python)
+    url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html
+  - type: API Reference (Java)
+    url: https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/ml/package-summary.html
+- name: GraphX API
+  description: 'Spark API for graphs and graph-parallel computation with a collection of  graph algorithms and builders.
+
+    '
+  image: https://spark.apache.org/images/spark-logo-trademark.png
+  humanURL: https://spark.apache.org/graphx/
+  baseURL: https://spark.apache.org/docs/latest/api/graphx/
+  tags:
+  - graphs
+  - graph processing
+  - analytics
+  properties:
+  - type: Documentation
+    url: https://spark.apache.org/docs/latest/graphx-programming-guide.html
+  - type: API Reference (Scala)
+    url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html
+maintainers:
+- FN: Apache Software Foundation
+  email: dev@spark.apache.org
+  url: https://www.apache.org/
+common:
+- type: GitHub Repository
+  url: https://github.com/apache/spark
+- type: Downloads
+  url: https://spark.apache.org/downloads.html
+- type: Getting Started
+  url: https://spark.apache.org/docs/latest/quick-start.html
+- type: Community
+  url: https://spark.apache.org/community.html
+- type: Blog
+  url: https://spark.apache.org/news/
+- type: Issue Tracker
+  url: https://issues.apache.org/jira/projects/SPARK
+- type: License
+  url: https://www.apache.org/licenses/LICENSE-2.0
+- type: Twitter
+  url: https://twitter.com/apachespark
+- type: Stack Overflow
+  url: https://stackoverflow.com/questions/tagged/apache-spark
