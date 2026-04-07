@@ -9,12 +9,12 @@ created: '2024-01-01'
 modified: '2024-01-01'
 specificationVersion: '0.16'
 tags:
-  - big data
-  - analytics
-  - distributed computing
-  - machine learning
-  - streaming
-  - apache
+  - Analytics
+  - Apache
+  - Big Data
+  - Distributed Computing
+  - Machine Learning
+  - Streaming
 apis:
   - name: Apache Spark REST API
     description: >-
@@ -24,10 +24,10 @@ apis:
     humanURL: https://spark.apache.org/docs/latest/monitoring.html
     baseURL: http://localhost:4040/api/v1
     tags:
-      - monitoring
-      - metrics
-      - jobs
-      - stages
+      - Jobs
+      - Metrics
+      - Monitoring
+      - Stages
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/monitoring.html#rest-api
@@ -45,21 +45,18 @@ apis:
     humanURL: https://spark.apache.org/sql/
     baseURL: https://spark.apache.org/docs/latest/api/sql/
     tags:
-      - sql
-      - dataframes
-      - structured data
+      - Dataframes
+      - Sql
+      - Structured Data
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/sql-programming-guide.html
       - type: API Reference (Scala)
-        url: 
-          https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html
+        url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html
       - type: API Reference (Python)
-        url: 
-          https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html
+        url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html
       - type: API Reference (Java)
-        url: 
-          https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/sql/package-summary.html
+        url: https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/sql/package-summary.html
       - type: API Reference (R)
         url: https://spark.apache.org/docs/latest/api/R/reference/index.html
   - name: Spark Streaming API
@@ -69,19 +66,16 @@ apis:
     humanURL: https://spark.apache.org/streaming/
     baseURL: https://spark.apache.org/docs/latest/api/streaming/
     tags:
-      - streaming
-      - real-time
-      - data processing
+      - Data Processing
+      - Real-Time
+      - Streaming
     properties:
       - type: Documentation
-        url: 
-          https://spark.apache.org/docs/latest/streaming-programming-guide.html
+        url: https://spark.apache.org/docs/latest/streaming-programming-guide.html
       - type: API Reference (Scala)
-        url: 
-          https://spark.apache.org/docs/latest/api/scala/org/apache/spark/streaming/index.html
+        url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/streaming/index.html
       - type: API Reference (Python)
-        url: 
-          https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming/index.html
+        url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming/index.html
   - name: MLlib (Machine Learning Library)
     description: >-
       Spark's scalable machine learning library consisting of common learning algorithms
@@ -91,22 +85,19 @@ apis:
     humanURL: https://spark.apache.org/mllib/
     baseURL: https://spark.apache.org/docs/latest/api/mllib/
     tags:
-      - machine learning
-      - algorithms
-      - ml
-      - data science
+      - Algorithms
+      - Data Science
+      - Machine Learning
+      - Ml
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/ml-guide.html
       - type: API Reference (Scala)
-        url: 
-          https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/index.html
+        url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/index.html
       - type: API Reference (Python)
-        url: 
-          https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html
+        url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html
       - type: API Reference (Java)
-        url: 
-          https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/ml/package-summary.html
+        url: https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/ml/package-summary.html
   - name: GraphX API
     description: >-
       Spark API for graphs and graph-parallel computation with a collection of graph
@@ -115,15 +106,14 @@ apis:
     humanURL: https://spark.apache.org/graphx/
     baseURL: https://spark.apache.org/docs/latest/api/graphx/
     tags:
-      - graphs
-      - graph processing
-      - analytics
+      - Analytics
+      - Graph Processing
+      - Graphs
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/graphx-programming-guide.html
       - type: API Reference (Scala)
-        url: 
-          https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html
+        url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html
 maintainers:
   - FN: Apache Software Foundation
     email: dev@spark.apache.org
