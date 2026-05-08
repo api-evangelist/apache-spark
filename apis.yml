@@ -39,6 +39,8 @@ apis:
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/monitoring.html#rest-api
+      - url: openapi/apache-spark-openapi.yml
+        type: OpenAPI
 
   - aid: apache-spark:apache-spark-sql-api
     name: Apache Spark SQL API
