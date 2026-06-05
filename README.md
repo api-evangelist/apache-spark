@@ -1,143 +1,150 @@
 # Apache Spark (apache-spark)
+
 Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python, and R, and an optimized engine that supports general execution graphs. Spark offers a comprehensive suite of APIs for batch processing, SQL queries, streaming analytics, machine learning, and graph computation, governed by the Apache Software Foundation.
 
-**URL:** [https://spark.apache.org/](https://spark.apache.org/)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/apache-spark/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/apache-spark/refs/heads/main/apis.yml)
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Scope
 
-## Tags:
+- **Type:** Index
+- **Position:** Consumer
+- **Access:** 3rd-Party
 
- - Analytics, Big Data, Distributed Computing, Machine Learning, Open Source, Streaming
+## Tags
+
+- Analytics
+- Big Data
+- Distributed Computing
+- Machine Learning
+- Open Source
+- Streaming
 
 ## Timestamps
 
 - **Created:** 2024-01-01
-- **Modified:** 2026-04-19
+- **Modified:** 2026-05-19
 
 ## APIs
 
 ### Apache Spark REST API
-REST API for monitoring Spark applications, accessing cluster information, and managing Spark jobs through the Spark UI backend. Exposes endpoints for applications, jobs, stages, tasks, storage, environment, and executors.
 
-**Human URL:** [https://spark.apache.org/docs/latest/monitoring.html#rest-api](https://spark.apache.org/docs/latest/monitoring.html#rest-api)
+REST API for monitoring Spark applications, accessing cluster information, and managing Spark jobs through the Spark UI backend. Exposes endpoints for applications, jobs, stages, tasks, storage, environment, executors, and streaming statistics on port 4040 (or 18080 for Spark History Server).
 
-#### Tags:
+- **Human URL:** [https://spark.apache.org/docs/latest/monitoring.html#rest-api](https://spark.apache.org/docs/latest/monitoring.html#rest-api)
 
- - Jobs, Metrics, Monitoring, Stages
+#### Tags
+
+- Jobs
+- Metrics
+- Monitoring
+- Stages
 
 #### Properties
 
 - [Documentation](https://spark.apache.org/docs/latest/monitoring.html#rest-api)
+- [OpenAPI](openapi/apache-spark-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Apache Spark SQL API
-Spark module for structured data processing with DataFrame and Dataset APIs. Provides a SQL interface and supports various data sources including Parquet, ORC, JSON, CSV, JDBC, Hive, and Delta Lake.
 
-**Human URL:** [https://spark.apache.org/docs/latest/sql-programming-guide.html](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+Spark module for structured data processing with DataFrame and Dataset APIs. Provides a SQL interface and supports various data sources including Parquet, ORC, JSON, CSV, JDBC, Hive, and Delta Lake. The Spark SQL API supports Scala, Python, Java, and R bindings.
 
-#### Tags:
+- **Human URL:** [https://spark.apache.org/docs/latest/sql-programming-guide.html](https://spark.apache.org/docs/latest/sql-programming-guide.html)
 
- - DataFrames, SQL, Structured Data
+#### Tags
+
+- DataFrames
+- SQL
+- Structured Data
 
 #### Properties
 
 - [Documentation](https://spark.apache.org/docs/latest/sql-programming-guide.html)
-- [Scala API Reference](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html)
-- [Python API Reference](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html)
-- [Java API Reference](https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/sql/package-summary.html)
+- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html)
+- [SDK](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html)
+- [SDK](https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/sql/package-summary.html)
+- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Apache Spark Streaming API
-Scalable, high-throughput, fault-tolerant stream processing with Structured Streaming, exactly-once semantics, and integration with Kafka, Kinesis, HDFS, and other sources.
 
-**Human URL:** [https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
+Scalable, high-throughput, fault-tolerant stream processing of live data streams. Supports Structured Streaming (the newer DStream-based API) with exactly-once semantics, continuous processing mode, and integration with Kafka, Kinesis, HDFS, and other sources.
 
-#### Tags:
+- **Human URL:** [https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
 
- - Data Processing, Real-Time, Streaming
+#### Tags
+
+- Data Processing
+- Real-Time
+- Streaming
 
 #### Properties
 
 - [Documentation](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
-- [Scala Streaming API](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/streaming/index.html)
-- [Python Streaming API](https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming/index.html)
+- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/streaming/index.html)
+- [SDK](https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming/index.html)
+- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Apache Spark MLlib API
-Spark's scalable machine learning library with classification, regression, clustering, collaborative filtering, and pipeline-based ML workflows.
 
-**Human URL:** [https://spark.apache.org/docs/latest/ml-guide.html](https://spark.apache.org/docs/latest/ml-guide.html)
+Spark's scalable machine learning library consisting of common learning algorithms and utilities, including classification, regression, clustering, collaborative filtering, dimensionality reduction, and feature engineering. Supports pipeline-based ML workflows through the spark.ml package.
 
-#### Tags:
+- **Human URL:** [https://spark.apache.org/docs/latest/ml-guide.html](https://spark.apache.org/docs/latest/ml-guide.html)
 
- - Algorithms, Data Science, Machine Learning, ML
+#### Tags
+
+- Algorithms
+- Data Science
+- Machine Learning
+- ML
 
 #### Properties
 
 - [Documentation](https://spark.apache.org/docs/latest/ml-guide.html)
-- [Scala MLlib API](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/index.html)
-- [Python MLlib API](https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html)
+- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/index.html)
+- [SDK](https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html)
+- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Apache Spark GraphX API
-Spark API for graphs and graph-parallel computation with PageRank, Connected Components, Triangle Counting, and shortest path algorithms.
 
-**Human URL:** [https://spark.apache.org/docs/latest/graphx-programming-guide.html](https://spark.apache.org/docs/latest/graphx-programming-guide.html)
+Spark API for graphs and graph-parallel computation with a collection of graph algorithms and builders, including PageRank, Connected Components, Triangle Counting, and shortest paths.
 
-#### Tags:
+- **Human URL:** [https://spark.apache.org/docs/latest/graphx-programming-guide.html](https://spark.apache.org/docs/latest/graphx-programming-guide.html)
 
- - Analytics, Graph Processing, Graphs
+#### Tags
+
+- Analytics
+- Graph Processing
+- Graphs
 
 #### Properties
 
 - [Documentation](https://spark.apache.org/docs/latest/graphx-programming-guide.html)
-- [Scala GraphX API](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html)
+- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html)
+- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
-- [GitHubRepository](https://github.com/apache/spark)
+- [LinkedIn](https://www.linkedin.com/company/apachespark)
+- [GitHub Repository](https://github.com/apache/spark)
 - [Portal](https://spark.apache.org/)
 - [Documentation](https://spark.apache.org/docs/latest/)
-- [GettingStarted](https://spark.apache.org/docs/latest/quick-start.html)
+- [Getting Started](https://spark.apache.org/docs/latest/quick-start.html)
 - [Blog](https://spark.apache.org/news/)
 - [Support](https://spark.apache.org/community.html)
-- [TermsOfService](https://www.apache.org/licenses/LICENSE-2.0)
-- [StackOverflow](https://stackoverflow.com/questions/tagged/apache-spark)
-- [PySpark (Python)](https://pypi.org/project/pyspark/)
-- [Maven (Scala/Java)](https://search.maven.org/search?q=g:org.apache.spark)
-
-## Features
-
-| Name | Description |
-|------|-------------|
-| Unified Analytics Engine | Single engine for batch, streaming, SQL, ML, and graph processing workloads. |
-| Lazy Evaluation and DAG Execution | Optimized execution plans with Catalyst optimizer and DAG scheduling. |
-| In-Memory Processing | Up to 100x faster than Hadoop MapReduce for iterative algorithms via in-memory caching. |
-| Structured Streaming | Unified streaming and batch processing with exactly-once semantics and Kafka integration. |
-| Multi-Language Support | High-level APIs in Scala, Java, Python (PySpark), and R (SparkR). |
-| Delta Lake Integration | ACID transactions, schema evolution, and time travel for data lakes. |
-| Kubernetes Native | Native Kubernetes scheduling for cloud-native deployment of Spark workloads. |
-
-## Use Cases
-
-| Name | Description |
-|------|-------------|
-| Large-Scale ETL | Extract, transform, and load petabytes of data across distributed clusters. |
-| Real-Time Analytics | Streaming analytics on live event data with sub-second latency. |
-| Machine Learning Pipelines | Distributed ML training and feature engineering at scale with MLlib. |
-| Data Lake Processing | Query and transform data stored in cloud object stores and HDFS. |
-| Interactive SQL Analytics | Interactive SQL queries on structured and semi-structured data at scale. |
-
-## Integrations
-
-| Name | Description |
-|------|-------------|
-| Apache Hadoop | HDFS storage, YARN cluster manager, and Hadoop ecosystem integration. |
-| Apache Kafka | Structured Streaming source and sink for real-time event processing. |
-| Delta Lake | Open-source storage layer with ACID transactions for data lakes. |
-| Apache Iceberg | Open table format for huge analytic datasets on cloud storage. |
-| Apache Hive | Hive metastore integration for table catalog and metadata management. |
-| Kubernetes | Native Kubernetes scheduling for cloud-native Spark deployments. |
-| Apache Airflow | Workflow orchestration for scheduling and managing Spark jobs. |
+- [Terms of Service](https://www.apache.org/licenses/LICENSE-2.0)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/apache-spark)
+- [SDK](https://pypi.org/project/pyspark/)
+- [SDK](https://search.maven.org/search?q=g:org.apache.spark)
+- [Features](undefined)
+- [Use Cases](undefined)
+- [Integrations](undefined)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** info@apievangelist.com
