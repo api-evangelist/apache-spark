@@ -1,0 +1,549 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Apache Spark Monitoring REST API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "List applications",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications"
+      },
+      "docs": "List applications"
+    },
+    {
+      "info": {
+        "name": "List jobs for an application",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/jobs",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List jobs for an application"
+    },
+    {
+      "info": {
+        "name": "Get a job",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/jobs/:job-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "job-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a job"
+    },
+    {
+      "info": {
+        "name": "List stages",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/stages",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List stages"
+    },
+    {
+      "info": {
+        "name": "Get stage",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/stages/:stage-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stage-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get stage"
+    },
+    {
+      "info": {
+        "name": "Get stage attempt",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/stages/:stage-id/:stage-attempt-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stage-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stage-attempt-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get stage attempt"
+    },
+    {
+      "info": {
+        "name": "Stage attempt task summary",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/stages/:stage-id/:stage-attempt-id/taskSummary",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stage-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stage-attempt-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Stage attempt task summary"
+    },
+    {
+      "info": {
+        "name": "Stage attempt task list",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/stages/:stage-id/:stage-attempt-id/taskList",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stage-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stage-attempt-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Stage attempt task list"
+    },
+    {
+      "info": {
+        "name": "List active executors",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/executors",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List active executors"
+    },
+    {
+      "info": {
+        "name": "Executor thread dump",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/executors/:executor-id/threads",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "executor-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Executor thread dump"
+    },
+    {
+      "info": {
+        "name": "List all executors (active and dead)",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/allexecutors",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List all executors (active and dead)"
+    },
+    {
+      "info": {
+        "name": "List persisted RDDs",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/storage/rdd",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List persisted RDDs"
+    },
+    {
+      "info": {
+        "name": "Get RDD details",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/storage/rdd/:rdd-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "rdd-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get RDD details"
+    },
+    {
+      "info": {
+        "name": "Download event logs",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:base-app-id/logs",
+        "params": [
+          {
+            "name": "base-app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Download event logs"
+    },
+    {
+      "info": {
+        "name": "Download event logs for an attempt",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:base-app-id/:attempt-id/logs",
+        "params": [
+          {
+            "name": "base-app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "attempt-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Download event logs for an attempt"
+    },
+    {
+      "info": {
+        "name": "Streaming statistics",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/streaming/statistics",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Streaming statistics"
+    },
+    {
+      "info": {
+        "name": "Streaming receivers",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/streaming/receivers",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Streaming receivers"
+    },
+    {
+      "info": {
+        "name": "Streaming receiver details",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/streaming/receivers/:stream-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "stream-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Streaming receiver details"
+    },
+    {
+      "info": {
+        "name": "Streaming batches",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/streaming/batches",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Streaming batches"
+    },
+    {
+      "info": {
+        "name": "Streaming batch details",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/streaming/batches/:batch-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "batch-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Streaming batch details"
+    },
+    {
+      "info": {
+        "name": "Streaming batch operations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/streaming/batches/:batch-id/operations",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "batch-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Streaming batch operations"
+    },
+    {
+      "info": {
+        "name": "Streaming output operation details",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/streaming/batches/:batch-id/operations/:outputOp-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "batch-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "outputOp-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Streaming output operation details"
+    },
+    {
+      "info": {
+        "name": "List SQL executions",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/sql",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List SQL executions"
+    },
+    {
+      "info": {
+        "name": "Get SQL execution details",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/sql/:execution-id",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "execution-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get SQL execution details"
+    },
+    {
+      "info": {
+        "name": "Application environment",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/applications/:app-id/environment",
+        "params": [
+          {
+            "name": "app-id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Application environment"
+    },
+    {
+      "info": {
+        "name": "Spark version",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "http://localhost:4040/api/v1/version"
+      },
+      "docs": "Spark version"
+    }
+  ],
+  "bundled": true
+}
