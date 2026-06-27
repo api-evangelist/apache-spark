@@ -3,19 +3,12 @@
   "feeds": [
     {
       "source": "https://spark.apache.org/news/",
-      "feed_url": "https://spark.apache.org/news/",
-      "title": "",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://spark.apache.org/docs/latest/quick-start.html",
-      "feed_url": "https://spark.apache.org/docs/latest/quick-start.html",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "method": "agent-scrape"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:24:03Z",
+  "agent_pulled": "2026-06-27"
 }

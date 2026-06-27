@@ -52,13 +52,13 @@ apis:
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/sql-programming-guide.html
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html
         title: Scala API Reference
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html
         title: Python API Reference
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/sql/package-summary.html
         title: Java API Reference
   - aid: apache-spark:apache-spark-streaming-api
@@ -75,10 +75,10 @@ apis:
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/streaming/index.html
         title: Scala Streaming API
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming/index.html
         title: Python Streaming API
   - aid: apache-spark:apache-spark-mllib-api
@@ -96,10 +96,10 @@ apis:
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/ml-guide.html
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/index.html
         title: Scala MLlib API
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html
         title: Python MLlib API
   - aid: apache-spark:apache-spark-graphx-api
@@ -115,7 +115,7 @@ apis:
     properties:
       - type: Documentation
         url: https://spark.apache.org/docs/latest/graphx-programming-guide.html
-      - type: SDK
+      - type: SDKs
         url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html
         title: Scala GraphX API
 common:
@@ -137,10 +137,10 @@ common:
     url: https://www.apache.org/licenses/LICENSE-2.0
   - type: StackOverflow
     url: https://stackoverflow.com/questions/tagged/apache-spark
-  - type: SDK
+  - type: SDKs
     url: https://pypi.org/project/pyspark/
     title: PySpark (Python)
-  - type: SDK
+  - type: SDKs
     url: https://search.maven.org/search?q=g:org.apache.spark
     title: Maven (Scala/Java)
   - type: Features
