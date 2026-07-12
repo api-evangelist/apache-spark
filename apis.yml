@@ -119,6 +119,10 @@ apis:
         url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html
         title: Scala GraphX API
 common:
+  - type: VulnerabilityDisclosure
+    url: security/apache-spark-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/apache-spark-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/apachespark
   - type: GitHubRepository
