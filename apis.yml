@@ -119,6 +119,8 @@ apis:
         url: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html
         title: Scala GraphX API
 common:
+  - type: AgenticAccess
+    url: agentic-access/apache-spark-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/apache-spark-vulnerability-disclosure.yml
   - type: DomainSecurity
