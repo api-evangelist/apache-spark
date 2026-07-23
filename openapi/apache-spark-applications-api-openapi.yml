@@ -1,23 +1,21 @@
 openapi: 3.1.0
 info:
-  title: Apache Spark Monitoring REST API
-  version: "1.0"
-  description: >-
-    Minimal OpenAPI for the Apache Spark monitoring REST API exposed by the
-    Spark UI and the History Server. All endpoints are mounted under /api/v1.
+  title: Apache Spark Monitoring REST Applications API
+  version: '1.0'
+  description: Minimal OpenAPI for the Apache Spark monitoring REST API exposed by the Spark UI and the History Server. All endpoints are mounted under /api/v1.
 servers:
-  - url: http://localhost:4040/api/v1
-    description: Spark application UI
-  - url: http://localhost:18080/api/v1
-    description: Spark History Server
-x-generated-from: https://spark.apache.org/docs/latest/monitoring.html
-x-generated-by: claude-crawl-2026-05-08
+- url: http://localhost:4040/api/v1
+  description: Spark application UI
+- url: http://localhost:18080/api/v1
+  description: Spark History Server
+tags:
+- name: Applications
 paths:
   /applications:
     get:
       summary: List applications
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
@@ -25,13 +23,15 @@ paths:
                 type: array
                 items:
                   type: object
+      tags:
+      - Applications
   /applications/{app-id}/jobs:
     get:
       summary: List jobs for an application
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
@@ -39,30 +39,34 @@ paths:
                 type: array
                 items:
                   type: object
+      tags:
+      - Applications
   /applications/{app-id}/jobs/{job-id}:
     get:
       summary: Get a job
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: job-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: job-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
               schema:
                 type: object
+      tags:
+      - Applications
   /applications/{app-id}/stages:
     get:
       summary: List stages
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
@@ -70,84 +74,92 @@ paths:
                 type: array
                 items:
                   type: object
+      tags:
+      - Applications
   /applications/{app-id}/stages/{stage-id}:
     get:
       summary: Get stage
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: stage-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: stage-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
               schema:
                 type: object
+      tags:
+      - Applications
   /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}:
     get:
       summary: Get stage attempt
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: stage-id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: stage-attempt-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: stage-id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: stage-attempt-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
               schema:
                 type: object
+      tags:
+      - Applications
   /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}/taskSummary:
     get:
       summary: Stage attempt task summary
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: stage-id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: stage-attempt-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: stage-id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: stage-attempt-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
               schema:
                 type: object
+      tags:
+      - Applications
   /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}/taskList:
     get:
       summary: Stage attempt task list
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: stage-id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: stage-attempt-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: stage-id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: stage-attempt-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
           content:
             application/json:
@@ -155,201 +167,231 @@ paths:
                 type: array
                 items:
                   type: object
+      tags:
+      - Applications
   /applications/{app-id}/executors:
     get:
       summary: List active executors
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/executors/{executor-id}/threads:
     get:
       summary: Executor thread dump
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: executor-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: executor-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/allexecutors:
     get:
       summary: List all executors (active and dead)
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/storage/rdd:
     get:
       summary: List persisted RDDs
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/storage/rdd/{rdd-id}:
     get:
       summary: Get RDD details
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: rdd-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: rdd-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{base-app-id}/logs:
     get:
       summary: Download event logs
       parameters:
-        - name: base-app-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - name: base-app-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{base-app-id}/{attempt-id}/logs:
     get:
       summary: Download event logs for an attempt
       parameters:
-        - name: base-app-id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: attempt-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - name: base-app-id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: attempt-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/streaming/statistics:
     get:
       summary: Streaming statistics
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/streaming/receivers:
     get:
       summary: Streaming receivers
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/streaming/receivers/{stream-id}:
     get:
       summary: Streaming receiver details
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: stream-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: stream-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/streaming/batches:
     get:
       summary: Streaming batches
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/streaming/batches/{batch-id}:
     get:
       summary: Streaming batch details
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: batch-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: batch-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/streaming/batches/{batch-id}/operations:
     get:
       summary: Streaming batch operations
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: batch-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: batch-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/streaming/batches/{batch-id}/operations/{outputOp-id}:
     get:
       summary: Streaming output operation details
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: batch-id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: outputOp-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: batch-id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: outputOp-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/sql:
     get:
       summary: List SQL executions
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/sql/{execution-id}:
     get:
       summary: Get SQL execution details
       parameters:
-        - $ref: "#/components/parameters/AppId"
-        - name: execution-id
-          in: path
-          required: true
-          schema:
-            type: string
+      - $ref: '#/components/parameters/AppId'
+      - name: execution-id
+        in: path
+        required: true
+        schema:
+          type: string
       responses:
-        "200":
+        '200':
           description: OK
+      tags:
+      - Applications
   /applications/{app-id}/environment:
     get:
       summary: Application environment
       parameters:
-        - $ref: "#/components/parameters/AppId"
+      - $ref: '#/components/parameters/AppId'
       responses:
-        "200":
+        '200':
           description: OK
-  /version:
-    get:
-      summary: Spark version
-      responses:
-        "200":
-          description: OK
+      tags:
+      - Applications
 components:
   parameters:
     AppId:
@@ -358,6 +400,5 @@ components:
       required: true
       schema:
         type: string
-  schemas:
-    GenericObject:
-      type: object
+x-generated-from: https://spark.apache.org/docs/latest/monitoring.html
+x-generated-by: claude-crawl-2026-05-08

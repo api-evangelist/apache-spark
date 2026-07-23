@@ -1,0 +1,23 @@
+openapi: 3.1.0
+info:
+  title: Apache Spark Monitoring REST Applications Version API
+  version: '1.0'
+  description: Minimal OpenAPI for the Apache Spark monitoring REST API exposed by the Spark UI and the History Server. All endpoints are mounted under /api/v1.
+servers:
+- url: http://localhost:4040/api/v1
+  description: Spark application UI
+- url: http://localhost:18080/api/v1
+  description: Spark History Server
+tags:
+- name: Version
+paths:
+  /version:
+    get:
+      summary: Spark version
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Version
+x-generated-from: https://spark.apache.org/docs/latest/monitoring.html
+x-generated-by: claude-crawl-2026-05-08
