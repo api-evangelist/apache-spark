@@ -1,0 +1,16 @@
+{
+  "provider": "apache-spark",
+  "sources": [
+    "apache-spark-applications-api-openapi.yml",
+    "apache-spark-version-api-openapi.yml"
+  ],
+  "outputs": [
+    "apache-spark-applications-api-openapi.yml",
+    "apache-spark-version-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
