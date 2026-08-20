@@ -25,6 +25,13 @@ tags:
   - Analytics
   - Big Data
   - Distributed Computing
+  - Machine-Learning
+  - Open-Source
+  - Streaming
+tags_raw:
+  - Analytics
+  - Big Data
+  - Distributed Computing
   - Machine Learning
   - Open Source
   - Streaming
@@ -87,6 +94,11 @@ apis:
   tags:
   - Algorithms
   - Data Science
+  - Machine-Learning
+  - ML
+  tags_raw:
+  - Algorithms
+  - Data Science
   - Machine Learning
   - ML
   properties:
@@ -119,6 +131,8 @@ apis:
   description: The Applications API from Apache Spark — 25 operation(s) for applications.
   humanURL: https://spark.apache.org/docs/latest/monitoring.html#rest-api
   tags:
+  - Application
+  tags_raw:
   - Applications
   properties:
   - type: OpenAPI
