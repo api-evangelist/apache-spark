@@ -32,7 +32,7 @@ accessModel:
   - plans
   generated: '2026-07-22'
   method: derived
-position: Consumer
+position: Consuming
 access: 3rd-Party
 image: https://spark.apache.org/images/spark-logo-trademark.png
 tags:
