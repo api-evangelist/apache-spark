@@ -1,8 +1,7 @@
 {
   "provider": "apache-spark",
   "sources": [
-    "apache-spark-applications-api-openapi.yml",
-    "apache-spark-version-api-openapi.yml"
+    "_ae-authored/apache-spark-openapi.yml"
   ],
   "outputs": [
     "apache-spark-applications-api-openapi.yml",
@@ -11,6 +10,41 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "apache-spark-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apache-spark-openapi.yml: tagged paths GET /applications -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/jobs -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/jobs/{job-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/stages -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/stages/{stage-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/stages/{stage-id}/{stage-attempt-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}/taskSummary -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}/taskList -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/executors -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/executors/{executor-id}/threads -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/allexecutors -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/storage/rdd -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/storage/rdd/{rdd-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{base-app-id}/logs -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{base-app-id}/{attempt-id}/logs -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/streaming/statistics -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/streaming/receivers -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/streaming/receivers/{stream-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/streaming/batches -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/streaming/batches/{batch-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/streaming/batches/{batch-id}/operations -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/streaming/batches/{batch-id}/operations/{outputOp-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/sql -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/sql/{execution-id} -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/environment -> Applications",
+    "apache-spark-openapi.yml: tagged paths GET /version -> Version",
+    "apache-spark-openapi.yml: declared missing tag: Applications",
+    "apache-spark-openapi.yml: declared missing tag: Version",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "apache-spark-applications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "apache-spark-version-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

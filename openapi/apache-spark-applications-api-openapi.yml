@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Apache Spark Monitoring REST Applications API
   version: '1.0'
@@ -25,6 +25,8 @@ paths:
                   type: object
       tags:
       - Applications
+      operationId: getApplications
+      x-operation-id-source: derived
   /applications/{app-id}/jobs:
     get:
       summary: List jobs for an application
@@ -41,6 +43,8 @@ paths:
                   type: object
       tags:
       - Applications
+      operationId: getApplicationsByAppIdJobs
+      x-operation-id-source: derived
   /applications/{app-id}/jobs/{job-id}:
     get:
       summary: Get a job
@@ -60,6 +64,8 @@ paths:
                 type: object
       tags:
       - Applications
+      operationId: getApplicationsByAppIdJobsByJobId
+      x-operation-id-source: derived
   /applications/{app-id}/stages:
     get:
       summary: List stages
@@ -76,6 +82,8 @@ paths:
                   type: object
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStages
+      x-operation-id-source: derived
   /applications/{app-id}/stages/{stage-id}:
     get:
       summary: Get stage
@@ -95,6 +103,8 @@ paths:
                 type: object
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStagesByStageId
+      x-operation-id-source: derived
   /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}:
     get:
       summary: Get stage attempt
@@ -119,6 +129,8 @@ paths:
                 type: object
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStagesByStageIdByStageAttemptId
+      x-operation-id-source: derived
   /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}/taskSummary:
     get:
       summary: Stage attempt task summary
@@ -143,6 +155,8 @@ paths:
                 type: object
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStagesByStageIdByStageAttemptIdTaskSummary
+      x-operation-id-source: derived
   /applications/{app-id}/stages/{stage-id}/{stage-attempt-id}/taskList:
     get:
       summary: Stage attempt task list
@@ -169,6 +183,8 @@ paths:
                   type: object
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStagesByStageIdByStageAttemptIdTaskList
+      x-operation-id-source: derived
   /applications/{app-id}/executors:
     get:
       summary: List active executors
@@ -179,6 +195,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdExecutors
+      x-operation-id-source: derived
   /applications/{app-id}/executors/{executor-id}/threads:
     get:
       summary: Executor thread dump
@@ -194,6 +212,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdExecutorsByExecutorIdThreads
+      x-operation-id-source: derived
   /applications/{app-id}/allexecutors:
     get:
       summary: List all executors (active and dead)
@@ -204,6 +224,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdAllexecutors
+      x-operation-id-source: derived
   /applications/{app-id}/storage/rdd:
     get:
       summary: List persisted RDDs
@@ -214,6 +236,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStorageRdd
+      x-operation-id-source: derived
   /applications/{app-id}/storage/rdd/{rdd-id}:
     get:
       summary: Get RDD details
@@ -229,6 +253,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStorageRddByRddId
+      x-operation-id-source: derived
   /applications/{base-app-id}/logs:
     get:
       summary: Download event logs
@@ -243,6 +269,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByBaseAppIdLogs
+      x-operation-id-source: derived
   /applications/{base-app-id}/{attempt-id}/logs:
     get:
       summary: Download event logs for an attempt
@@ -262,6 +290,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByBaseAppIdByAttemptIdLogs
+      x-operation-id-source: derived
   /applications/{app-id}/streaming/statistics:
     get:
       summary: Streaming statistics
@@ -272,6 +302,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStreamingStatistics
+      x-operation-id-source: derived
   /applications/{app-id}/streaming/receivers:
     get:
       summary: Streaming receivers
@@ -282,6 +314,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStreamingReceivers
+      x-operation-id-source: derived
   /applications/{app-id}/streaming/receivers/{stream-id}:
     get:
       summary: Streaming receiver details
@@ -297,6 +331,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStreamingReceiversByStreamId
+      x-operation-id-source: derived
   /applications/{app-id}/streaming/batches:
     get:
       summary: Streaming batches
@@ -307,6 +343,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStreamingBatches
+      x-operation-id-source: derived
   /applications/{app-id}/streaming/batches/{batch-id}:
     get:
       summary: Streaming batch details
@@ -322,6 +360,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStreamingBatchesByBatchId
+      x-operation-id-source: derived
   /applications/{app-id}/streaming/batches/{batch-id}/operations:
     get:
       summary: Streaming batch operations
@@ -337,6 +377,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStreamingBatchesByBatchIdOperations
+      x-operation-id-source: derived
   /applications/{app-id}/streaming/batches/{batch-id}/operations/{outputOp-id}:
     get:
       summary: Streaming output operation details
@@ -357,6 +399,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdStreamingBatchesByBatchIdOperationsByOutputOpId
+      x-operation-id-source: derived
   /applications/{app-id}/sql:
     get:
       summary: List SQL executions
@@ -367,6 +411,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdSql
+      x-operation-id-source: derived
   /applications/{app-id}/sql/{execution-id}:
     get:
       summary: Get SQL execution details
@@ -382,6 +428,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdSqlByExecutionId
+      x-operation-id-source: derived
   /applications/{app-id}/environment:
     get:
       summary: Application environment
@@ -392,6 +440,8 @@ paths:
           description: OK
       tags:
       - Applications
+      operationId: getApplicationsByAppIdEnvironment
+      x-operation-id-source: derived
 components:
   parameters:
     AppId:
