@@ -39,8 +39,8 @@ tags:
   - Analytics
   - Big Data
   - Distributed Computing
-  - Machine-Learning
-  - Open-Source
+  - Machine Learning
+  - Open Source
   - Streaming
 tags_raw:
   - Analytics
@@ -49,6 +49,8 @@ tags_raw:
   - Machine Learning
   - Open Source
   - Streaming
+  - Machine-Learning
+  - Open-Source
 created: '2024-01-01'
 modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/apache-spark/refs/heads/main/apis.yml
@@ -108,12 +110,13 @@ apis:
   tags:
   - Algorithms
   - Data Science
-  - Machine-Learning
+  - Machine Learning
   tags_raw:
   - Algorithms
   - Data Science
   - Machine Learning
   - ML
+  - Machine-Learning
   properties:
   - type: Documentation
     url: https://spark.apache.org/docs/latest/ml-guide.html
