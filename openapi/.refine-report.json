@@ -1,9 +1,12 @@
 {
   "provider": "apache-spark",
   "sources": [
+    "_original/apache-spark-openapi.json",
     "_ae-authored/apache-spark-openapi.yml"
   ],
   "outputs": [
+    "apache-spark-queues-api-openapi.yml",
+    "apache-spark-status-api-openapi.yml",
     "apache-spark-applications-api-openapi.yml",
     "apache-spark-version-api-openapi.yml"
   ],
@@ -11,7 +14,8 @@
   "errors": [],
   "warnings": [],
   "notes": [
-    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "apache-spark-openapi.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
     "apache-spark-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "apache-spark-openapi.yml: tagged paths GET /applications -> Applications",
     "apache-spark-openapi.yml: tagged paths GET /applications/{app-id}/jobs -> Applications",
@@ -41,7 +45,7 @@
     "apache-spark-openapi.yml: tagged paths GET /version -> Version",
     "apache-spark-openapi.yml: declared missing tag: Applications",
     "apache-spark-openapi.yml: declared missing tag: Version",
-    "apis.yml register: already-registered"
+    "apis.yml register: written (+2 apis, 8 total)"
   ],
   "skipped": [
     "apache-spark-applications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
