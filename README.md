@@ -1,4 +1,4 @@
-# Apache Spark (apache-spark)
+# Apache Spark
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,149 +66,124 @@
 
 Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python, and R, and an optimized engine that supports general execution graphs. Spark offers a comprehensive suite of APIs for batch processing, SQL queries, streaming analytics, machine learning, and graph computation, governed by the Apache Software Foundation.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/apache-spark/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/apache-spark/refs/heads/main/apis.yml)
+**Areas:** Analytics · Big Data · Distributed Computing · Machine Learning · Open Source · Streaming
 
-## Scope
+## Apache Spark on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Apache Spark is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/apache-spark/](https://apis.io/providers/apache-spark/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (6)
 
-- Analytics
-- Big Data
-- Distributed Computing
-- Machine Learning
-- Open Source
-- Streaming
+- [Apache Spark SQL API](https://apis.io/apis/apache-spark/apache-spark-sql-api/) — Spark module for structured data processing with DataFrame and Dataset APIs. Provides a SQL interface and supports various data sources including Parquet,…
+- [Apache Spark Streaming API](https://apis.io/apis/apache-spark/apache-spark-streaming-api/) — Scalable, high-throughput, fault-tolerant stream processing of live data streams. Supports Structured Streaming (the newer DStream-based API) with…
+- [Apache Spark MLlib API](https://apis.io/apis/apache-spark/apache-spark-mllib-api/) — Spark's scalable machine learning library consisting of common learning algorithms and utilities, including classification, regression, clustering,…
+- [Apache Spark GraphX API](https://apis.io/apis/apache-spark/apache-spark-graphx-api/) — Spark API for graphs and graph-parallel computation with a collection of graph algorithms and builders, including PageRank, Connected Components, Triangle…
+- [Apache Spark Applications API](https://apis.io/apis/apache-spark/apache-spark-applications-api/) — The Applications API from Apache Spark — 25 operation(s) for applications.
+- [Apache Spark Version API](https://apis.io/apis/apache-spark/apache-spark-version-api/) — The Version API from Apache Spark — 1 operation(s) for version.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Apache Spark REST API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-REST API for monitoring Spark applications, accessing cluster information, and managing Spark jobs through the Spark UI backend. Exposes endpoints for applications, jobs, stages, tasks, storage, environment, executors, and streaming statistics on port 4040 (or 18080 for Spark History Server).
+- [Apache Spark Agentic Access](https://apis.io/agentic-access/apache-spark/apache-spark-agentic-access/)
 
-- **Human URL:** [https://spark.apache.org/docs/latest/monitoring.html#rest-api](https://spark.apache.org/docs/latest/monitoring.html#rest-api)
+#### Collections (3)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Jobs
-- Metrics
-- Monitoring
-- Stages
+- [Apache Spark Monitoring REST API](https://apis.io/collections/apache-spark/open-apache-spark/)
+- [Apache Spark Monitoring REST Applications API](https://apis.io/collections/apache-spark/open-apache-spark-applications-api/)
+- [Apache Spark Monitoring REST Applications Version API](https://apis.io/collections/apache-spark/open-apache-spark-version-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://spark.apache.org/docs/latest/monitoring.html#rest-api)
-- [OpenAPI](openapi/apache-spark-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Apache Spark SQL API
+- [Apache Spark Domain Security](https://apis.io/security/apache-spark/apache-spark-domain-security/)
+- [Apache Spark Vulnerability Disclosure](https://apis.io/security/apache-spark/apache-spark-vulnerability-disclosure/)
 
-Spark module for structured data processing with DataFrame and Dataset APIs. Provides a SQL interface and supports various data sources including Parquet, ORC, JSON, CSV, JDBC, Hive, and Delta Lake. The Spark SQL API supports Scala, Python, Java, and R bindings.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://spark.apache.org/docs/latest/sql-programming-guide.html](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+Published plans, tiers and prices.
 
-#### Tags
+- [Apache Spark Plans Pricing](https://apis.io/plans/apache-spark/apache-spark-plans-pricing/)
 
-- DataFrames
-- SQL
-- Structured Data
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://spark.apache.org/docs/latest/sql-programming-guide.html)
-- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html)
-- [SDK](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html)
-- [SDK](https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/sql/package-summary.html)
-- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Apache Spark Rate Limits](https://apis.io/rate-limits/apache-spark/apache-spark-rate-limits/)
 
-### Apache Spark Streaming API
+#### FinOps (1)
 
-Scalable, high-throughput, fault-tolerant stream processing of live data streams. Supports Structured Streaming (the newer DStream-based API) with exactly-once semantics, continuous processing mode, and integration with Kafka, Kinesis, HDFS, and other sources.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
+- [Apache Spark Finops](https://apis.io/finops/apache-spark/apache-spark-finops/)
 
-#### Tags
+## Where to find this API
 
-- Data Processing
-- Real-Time
-- Streaming
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Properties
-
-- [Documentation](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
-- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/streaming/index.html)
-- [SDK](https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming/index.html)
-- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Apache Spark MLlib API
-
-Spark's scalable machine learning library consisting of common learning algorithms and utilities, including classification, regression, clustering, collaborative filtering, dimensionality reduction, and feature engineering. Supports pipeline-based ML workflows through the spark.ml package.
-
-- **Human URL:** [https://spark.apache.org/docs/latest/ml-guide.html](https://spark.apache.org/docs/latest/ml-guide.html)
-
-#### Tags
-
-- Algorithms
-- Data Science
-- Machine Learning
-- ML
-
-#### Properties
-
-- [Documentation](https://spark.apache.org/docs/latest/ml-guide.html)
-- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/index.html)
-- [SDK](https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html)
-- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Apache Spark GraphX API
-
-Spark API for graphs and graph-parallel computation with a collection of graph algorithms and builders, including PageRank, Connected Components, Triangle Counting, and shortest paths.
-
-- **Human URL:** [https://spark.apache.org/docs/latest/graphx-programming-guide.html](https://spark.apache.org/docs/latest/graphx-programming-guide.html)
-
-#### Tags
-
-- Analytics
-- Graph Processing
-- Graphs
-
-#### Properties
-
-- [Documentation](https://spark.apache.org/docs/latest/graphx-programming-guide.html)
-- [SDK](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/graphx/index.html)
-- [Postman Collection](collections/apache-spark.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/apache-spark.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/apachespark)
-- [GitHub Repository](https://github.com/apache/spark)
-- [Portal](https://spark.apache.org/)
+- [Website](https://www.apache.org/)
 - [Documentation](https://spark.apache.org/docs/latest/)
-- [Getting Started](https://spark.apache.org/docs/latest/quick-start.html)
-- [Blog](https://spark.apache.org/news/)
+- [Getting started](https://spark.apache.org/docs/latest/quick-start.html)
 - [Support](https://spark.apache.org/community.html)
-- [Terms of Service](https://www.apache.org/licenses/LICENSE-2.0)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/apache-spark)
-- [SDK](https://pypi.org/project/pyspark/)
-- [SDK](https://search.maven.org/search?q=g:org.apache.spark)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
+- [Blog](https://spark.apache.org/news/)
+- [Terms of service](https://www.apache.org/licenses/LICENSE-2.0)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** info@apievangelist.com
+**Kin Score 36.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 33.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 54.8 |
+| Access clarity | 18.4 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/apache-spark/](https://apis.io/providers/apache-spark/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Apache Spark: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/apache-spark/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
